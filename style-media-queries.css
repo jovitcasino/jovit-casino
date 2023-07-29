@@ -1,0 +1,69 @@
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+
+ 
+/* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
+@media only screen and (max-width: 1440px) {
+
+} 
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+} 
+
+
+/* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
+@media only screen and (max-width: 991px) {
+    
+
+} 
+
+/* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
+@media only screen and (max-width: 767px) {
+    header::before{
+        opacity: 1;
+        height: 100%;
+    }
+    .intro-title{
+        text-align: center;
+    }
+    .smi ul{
+        justify-content: center;
+    }
+    .intro-content > .row > .image-area{
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .intro-content {
+        padding: 200px 0 0;
+    }
+    .section-bg canvas{
+        background-attachment: scroll;
+    }
+}
+
+/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
+@media only screen and (max-width: 480px) {
+    header .header-logo img{
+        max-width: 70px;
+    }
+    .main-nav ul li{
+        margin: 0 10px;
+    }
+    .main-nav ul li a{
+        font-size: 12px;
+    }
+    .logo-item img{
+        max-width: 110px;
+    }
+
+}
+ 
