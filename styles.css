@@ -307,8 +307,6 @@ header .header-logo img{
     width: calc((100% / 3) - 20px);
     margin-bottom: 30px;
 
-    
-    transition: var(--default-transition);
 }
 .projects-item:hover{
     transform: scale(1.05);
@@ -321,6 +319,7 @@ header .header-logo img{
     background: var(--dark);
     overflow: hidden;
     border-radius: 20px;
+    transition: var(--default-transition);
 }
 .projects-item a:hover{
     transform: scale(1.05);
