@@ -83,6 +83,12 @@
     .main-nav ul li{
         margin: 0 5px;
     }
+    .projects .slick-prev {
+        left: -13px;
+    }
+    .projects .slick-next {
+        right: -13px;
+    }
 }
 /* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
 @media only screen and (max-width: 480px) {

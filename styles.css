@@ -340,3 +340,20 @@ header .header-logo img{
     text-align: center;
     text-decoration: none;
 }
+.projects .slick-prev,
+.projects .slick-next{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+.projects .slick-prev:before,
+.projects .slick-next:before{
+    font-size: 40px;
+    color: var(--primary);
+}
+.projects .slick-prev {
+    left: -45px;
+}
+.projects .slick-next {
+    right: -45px;
+}
