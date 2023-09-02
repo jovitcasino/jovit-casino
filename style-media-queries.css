@@ -25,6 +25,9 @@
         opacity: 90%;
         height: 100%;
     }
+    .main-nav ul li a::after{
+        opacity: 0;
+    }
     .projects-inner{
         width: 100%;
         max-width: 500px;
@@ -40,6 +43,7 @@
     .projects-item:hover img{
 /*        transform: scale(1.05);*/
     }
+    
 } 
 
 /* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
