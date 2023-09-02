@@ -21,8 +21,25 @@
 
 /* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
 @media only screen and (max-width: 991px) {
-    
-
+    header::before{
+        opacity: 90%;
+        height: 100%;
+    }
+    .projects-inner{
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    .projects-item{
+        padding: 30px;
+        transform: scale(1) !important;
+    }
+    .projects-item img{
+        transition: var(--default-transition);
+    }
+    .projects-item:hover img{
+        transform: scale(1.05);
+    }
 } 
 
 /* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
@@ -48,15 +65,18 @@
     .section-bg canvas{
         background-attachment: scroll;
     }
+    .projects-title{
+        font-size: 20px;
+    }
 }
 
 /* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
 @media only screen and (max-width: 480px) {
     header .header-logo img{
-        max-width: 70px;
+        max-width: 40px;
     }
     .main-nav ul li{
-        margin: 0 10px;
+        margin: 0 5px;
     }
     .main-nav ul li a{
         font-size: 12px;
@@ -64,6 +84,11 @@
     .logo-item img{
         max-width: 110px;
     }
-
+    .section-title h1{
+        font-size: 50px;
+    }
+    .intro-title h1{
+        font-size: 60px;
+    }
 }
  

@@ -53,6 +53,10 @@
 				e.preventDefault();
 			    $('html, body').animate({scrollTop: $('#about').offset().top - 132}, 500);
 			});
+            $('.main-nav ul li:nth-child(3) a').click(function (e) {
+				e.preventDefault();
+			    $('html, body').animate({scrollTop: $('#projects').offset().top - 132}, 500);
+			});
 			$('.main-nav ul li:last-child a').click(function (e) {
 				e.preventDefault();
 			    $('html, body').animate({scrollTop: $('#contact').offset().top - 132}, 500);
@@ -71,6 +75,67 @@
 			
 			  }); 
 		},
+        initProjectsSlick: function(){
+//            if ( !window.innerWidth > 991) {
+//                $('.projects-slick').not(".slick-initialized").slick({
+//                    autoplay: true,
+//                    autoplaySpeed: 10000,
+//                    slidesToShow: 1,
+//                    slidesToScroll: 1,
+//                    arrows: false,
+//                    dots: false,
+//                    infinite: true,
+//                    fade: false,
+//                });
+//            }
+//            window.addEventListener('resize', function() {
+//				if (window.innerWidth < 992) {
+//					$('.projects-slick').slick({
+//                        autoplay: true,
+//                        autoplaySpeed: 10000,
+//                        slidesToShow: 1,
+//                        slidesToScroll: 1,
+//                        arrows: false,
+//                        dots: false,
+//                        infinite: true,
+//                        fade: false,
+//                    });
+//				  }
+//			  });
+            function yourFunction() {
+                $('.projects-slick').not(".slick-initialized").slick({
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: false,
+                    infinite: true,
+                    fade: false,
+                });
+            }
+
+            function checkScreenWidthAndExecute() {
+                if ($(window).width() < 992) {
+                    yourFunction();
+                }
+            }
+
+            // Call the function initially and add a resize event handler
+            checkScreenWidthAndExecute();
+
+            $(window).on('resize', function() {
+            if ($(window).width() >= 992) {
+              // Screen size is 992 pixels or above, so do not execute the function
+              return;
+            }
+
+            // Screen size is below 992 pixels, so execute the function
+            checkScreenWidthAndExecute();
+            });
+            
+        },
+        
 	}
 
 	
@@ -80,6 +145,7 @@
 		app.initTextTyping();
         app.initLogoSlide();
 		AOS.init();
+        app.initProjectsSlick();
 	});
 	
 	$(window).on('load', function(){
