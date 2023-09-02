@@ -100,13 +100,15 @@
 
             $(window).on('resize', function() {
             if ($(window).width() >= 992) {
-              // Screen size is 992 pixels or above, so do not execute the function
+              $('.projects-slick').slick('unslick');
               return;
             }
 
             // Screen size is below 992 pixels, so execute the function
             checkScreenWidthAndExecute();
             });
+            
+            
             
         },
         
