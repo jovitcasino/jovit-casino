@@ -36,6 +36,7 @@
     .projects-item{
         padding: 30px;
         transform: scale(1) !important;
+        margin-bottom: 0;
     }
     .projects-item img{
 /*        transition: var(--default-transition);*/
