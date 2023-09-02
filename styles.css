@@ -350,10 +350,17 @@ header .header-logo img{
 .projects .slick-next:before{
     font-size: 40px;
     color: var(--primary);
+    transition: var(--default-transition);
 }
 .projects .slick-prev {
     left: -45px;
 }
 .projects .slick-next {
     right: -45px;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before{
+    color: #ffffff;
 }
