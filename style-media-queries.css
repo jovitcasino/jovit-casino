@@ -72,6 +72,9 @@
     .projects-title{
         font-size: 20px;
     }
+    .logo-item img{
+        max-width: 110px;
+    }
 }
 @media only screen and (max-width: 580px){
     header .header-logo img{
@@ -87,9 +90,7 @@
     .main-nav ul li a{
         font-size: 12px;
     }
-    .logo-item img{
-        max-width: 110px;
-    }
+    
     .section-title h1{
         font-size: 50px;
     }
