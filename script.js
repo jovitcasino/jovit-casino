@@ -76,32 +76,6 @@
 			  }); 
 		},
         initProjectsSlick: function(){
-//            if ( !window.innerWidth > 991) {
-//                $('.projects-slick').not(".slick-initialized").slick({
-//                    autoplay: true,
-//                    autoplaySpeed: 10000,
-//                    slidesToShow: 1,
-//                    slidesToScroll: 1,
-//                    arrows: false,
-//                    dots: false,
-//                    infinite: true,
-//                    fade: false,
-//                });
-//            }
-//            window.addEventListener('resize', function() {
-//				if (window.innerWidth < 992) {
-//					$('.projects-slick').slick({
-//                        autoplay: true,
-//                        autoplaySpeed: 10000,
-//                        slidesToShow: 1,
-//                        slidesToScroll: 1,
-//                        arrows: false,
-//                        dots: false,
-//                        infinite: true,
-//                        fade: false,
-//                    });
-//				  }
-//			  });
             function yourFunction() {
                 $('.projects-slick').not(".slick-initialized").slick({
                     autoplay: true,
