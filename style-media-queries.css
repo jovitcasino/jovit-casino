@@ -73,15 +73,17 @@
         font-size: 20px;
     }
 }
-
-/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px){
     header .header-logo img{
         max-width: 40px;
     }
     .main-nav ul li{
         margin: 0 5px;
     }
+}
+/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
+@media only screen and (max-width: 480px) {
+    
     .main-nav ul li a{
         font-size: 12px;
     }
