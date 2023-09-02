@@ -105,7 +105,7 @@
             function yourFunction() {
                 $('.projects-slick').not(".slick-initialized").slick({
                     autoplay: true,
-                    autoplaySpeed: 10000,
+                    autoplaySpeed: 2000,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
