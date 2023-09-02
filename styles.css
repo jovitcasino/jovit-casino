@@ -322,6 +322,10 @@ header .header-logo img{
     overflow: hidden;
     border-radius: 20px;
 }
+.projects-item a:hover{
+    transform: scale(1.05);
+    z-index: 1;
+}
 .projects-item .img-wrap{
     overflow: hidden;
 }
