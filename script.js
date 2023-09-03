@@ -82,7 +82,7 @@
                     autoplaySpeed: 2000,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: false,
                     infinite: true,
                     fade: false,
