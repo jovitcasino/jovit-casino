@@ -14,6 +14,9 @@ body{
 .hidden{
     display: none !important;
 }
+a:hover{
+    text-decoration: none !important;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -192,16 +195,19 @@ header .header-logo img{
 .section-title.centered{
     text-align: center;
 }
-.section-title h1{
+.section-title h2{
     text-transform: uppercase;
     font-size: 55px;
     color: var(--main-title-color);
     font-weight: 700;
     margin: 0;
 }
-.section-title h3{
+.section-title span{
     font-weight: 100;
     margin: 0;
+    font-size: 1.75rem;
+    display: block;
+    color: var(--sub-title-color);
 }
 .smi{
     margin-top: 30px;
@@ -320,25 +326,42 @@ header .header-logo img{
     overflow: hidden;
     border-radius: 20px;
     transition: var(--default-transition);
+    position: relative;
 }
-.projects-item a:hover{
-    transform: scale(1.05);
-    z-index: 1;
+.projects-item a:hover .img-wrap::after{
+    height: 900%;
+
+}
+.projects-item a:hover .projects-title{
+    bottom: 50%;
+    transform: translateY(50%);
 }
 .projects-item .img-wrap{
     overflow: hidden;
 }
+.projects-item .img-wrap::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 0%, var(--background-color) 100%);
+    transition: var(--default-transition);
+}
 .projects-title{
-    position: relative;
-    padding: 30px;
-    
-    font-size: 25px;
+    padding: 20px 30px;
+    font-size: 21px;
     font-weight: 500;
     letter-spacing: 0.025em;
     color: #ffffff;
     line-height: 1.25;
     text-align: center;
     text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: var(--default-transition);
 }
 .projects .slick-prev,
 .projects .slick-next{
